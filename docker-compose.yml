@@ -1,6 +1,6 @@
-version: "4"
+version: "3"
 services:
-    educatify:
+    educatifyapp:
         build: .
         ports: 
             - "80:4200"
