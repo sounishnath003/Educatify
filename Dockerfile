@@ -8,9 +8,11 @@ WORKDIR /app
 COPY . .
 RUN npm install
 RUN npm i -g @angular/cli
-RUN npm run-script build
-CMD [ "echo", "installed @angular, optimizing build prod" ]
+# RUN npm run-script build
+EXPOSE 4200
+CMD npm start
 
 
-FROM nginx:alpine
-COPY --from=node /app/dist/educatify /usr/share/nginx/html
+# made for production checking
+# FROM nginx:alpine
+# COPY --from=node /app /usr/share/nginx/html

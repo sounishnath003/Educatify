@@ -1,0 +1,9 @@
+version: "4"
+services:
+    educatify:
+        build: .
+        ports: 
+            - "80:4200"
+        volumes: 
+            - "/app/node_modules"
+            - ".:/app"

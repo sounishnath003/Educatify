@@ -2,8 +2,15 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
 # Docker Container
+## Building Image
 **Executing task:** 
-> docker build --pull --rm -f "Dockerfile" -t educatify:latest "." <
+> docker build --pull --rm -f "Dockerfile" -t educatify:latest "."
+## Run The Container
+**Executing task:** 
+> docker run --rm -d  -p 80:80/tcp educatify:latest 
+## Composing for Live Dev
+**Executing task:** 
+> docker-compose -f "docker-compose.yml" up -d --build
 
 
 ## Development server
