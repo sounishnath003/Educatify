@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve & ngtw watch",
-    "build": "ngtw build && ng build --host 0.0.0.0",
+    "build": "ngtw build && ng build --sourceMap=true --progress=true --optimization=true",
+    "remote": "ngtw build && ng serve --host=192.168.0.2 --sourceMap=true --progress=true --optimization=true",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
