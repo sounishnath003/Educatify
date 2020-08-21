@@ -1,0 +1,65 @@
+<mat-drawer
+  (click)="drawer.toggle()"
+  #drawer
+  class="example-sidenav"
+  mode="side"
+>
+  <mat-list>
+    <div mat-subheader>Folders</div>
+    <mat-list-item>
+      <mat-icon mat-list-icon>home</mat-icon>
+      <div mat-line>Classes</div>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon mat-list-icon>calendar_today</mat-icon>
+      <div mat-line>Calender</div>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <div mat-subheader>Teaching</div>
+    <mat-list-item>
+      <mat-icon mat-list-icon class="mat-18">rule</mat-icon>
+      <div mat-line>To review</div>
+    </mat-list-item>
+  </mat-list>
+</mat-drawer>
+
+<mat-sidenav-container autosize>
+  <mat-toolbar class="bg-white">
+    <button
+      mat-button
+      (click)="drawer.toggle()"
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Welcome Classroom</span>
+    <span class="spacer"></span>
+    <button
+      mat-icon-button
+      [matMenuTriggerFor]="menu"
+      class="example-icon favorite-icon"
+      aria-label="Example icon-button with heart icon"
+    >
+      <mat-icon>add</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Join Class</button>
+      <button mat-menu-item>Create Class</button>
+    </mat-menu>
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with share icon"
+    >
+      <mat-icon class="mat-18">
+        <img
+          src="https://avatars0.githubusercontent.com/u/40270033?s=460&u=1b226ea48e266a392c3b213b9bedca00ed7e83ff&v=4"
+          alt="profile icon"
+          class="rounded-full w-64"
+        />
+      </mat-icon>
+    </button>
+  </mat-toolbar>
+</mat-sidenav-container>
