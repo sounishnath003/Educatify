@@ -1,3 +1,4 @@
+import { HeaderComponent } from './common/header/header.component';
 import { MaterialModule } from './Material/Material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -7,11 +8,14 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [	
+    AppComponent,
+      HomeComponent,
+      HeaderComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
