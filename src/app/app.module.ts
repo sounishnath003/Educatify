@@ -9,12 +9,14 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
+import { ClassCardComponent } from './home/class-card/class-card.component';
 
 @NgModule({
   declarations: [	
     AppComponent,
       HomeComponent,
-      HeaderComponent
+      HeaderComponent,
+      ClassCardComponent
    ],
   imports: [
     BrowserModule,
