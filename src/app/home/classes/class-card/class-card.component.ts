@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-class-card',
@@ -6,16 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./class-card.component.css'],
 })
 export class ClassCardComponent implements OnInit {
-  constructor() {}
+  constructor(private router : Router) {}
 
   ngOnInit(): void {
-    console.log(this.tempColor);
   }
   copyClip() {
     alert('Class code copied!');
   }
   bgColor: string[] = [
-    '',
+    '#2191AB',
     '#080357',
     '#7700b3',
     '#CF5C36',
@@ -25,5 +25,12 @@ export class ClassCardComponent implements OnInit {
     '#CA2E55',
     '#2191FB',
   ];
-  tempColor = this.bgColor[Math.floor(Math.random() * this.bgColor.length) + 1];
+  tempColor = this.bgColor[
+    Math.floor(Math.random() * this.bgColor.length - 1) + 1
+  ];
+
+  navigateClass(classId){
+    this.router.navigateByUrl(`/class/${classId}`)
+    console.log(classId)
+  }
 }
