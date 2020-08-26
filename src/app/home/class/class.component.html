@@ -1,5 +1,9 @@
-<div class="bg-indigo-700 pt-10 pb-20 px-16 text-white rounded-lg">
-  <h2 class="text-3xl">HTML Crash course</h2>
-  <h4>Web development</h4>
-  <p class="text-sm pt-2">Class Code : ashl-csc-cas</p>
-</div>
+<nav mat-tab-nav-bar>
+  <a mat-tab-link class="font-semibold" *ngFor="let link of links" [routerLink]="link.path"
+  routerLinkActive #rla="routerLinkActive" [active]="rla.isActive"
+  >
+    {{link.label}}
+  </a>
+</nav>
+<br>
+<router-outlet></router-outlet>

@@ -9,6 +9,12 @@ export class ClassComponent implements OnInit {
 
   constructor() { }
 
+  links:any[] = [
+    {label:'Stream',path:'stream'},
+    {label:'Classwork',path:'class-work'},
+    {label:'People',path:'people'}
+  ]
+
   ngOnInit(): void {
   }
 

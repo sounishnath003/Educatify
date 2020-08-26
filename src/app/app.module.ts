@@ -12,6 +12,9 @@ import { HomeComponent } from './home/home.component';
 import { ClassCardComponent } from './home/classes/class-card/class-card.component';
 import { ClassComponent } from './home/class/class.component';
 import { ClassesComponent } from './home/classes/classes.component';
+import { StreamComponent } from './home/class/stream/stream.component';
+import { ClassWorkComponent } from './home/class/class-work/class-work.component';
+import { PeopleComponent } from './home/class/people/people.component';
 
 @NgModule({
   declarations: [	
@@ -20,7 +23,10 @@ import { ClassesComponent } from './home/classes/classes.component';
       HeaderComponent,
       ClassCardComponent,
       ClassComponent,
-      ClassesComponent
+      ClassesComponent,
+      StreamComponent,
+      ClassWorkComponent,
+      PeopleComponent
    ],
   imports: [
     BrowserModule,
