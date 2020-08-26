@@ -4,12 +4,12 @@
 >
   <div
     class="h-32 px-4 pt-2 cursor-pointer text-white"
-    [style.background-color]="tempColor"
-    (click)="navigateClass('dfg-das-vaa')"
+    [style.background-color]="color"
+    (click)="navigateClass(classData)"
   >
-    <p class="text-xl">HTML crash course</p>
-    <p class="text-sm">Web Development</p>
-    <p class="text-xs pt-2">0 students</p>
+    <p class="text-xl">{{classData.title}}</p>
+    <p class="text-sm">{{classData.desc}}</p>
+    <p class="text-xs pt-2">{{classData.student}} students</p>
   </div>
   <div>
     <hr />
@@ -19,7 +19,7 @@
         <span
           (click)="copyClip()"
           class="text-gray-500 hover:text-gray-700 cursor-pointer"
-          >xf23gjl</span
+          >{{classData.classCode}}</span
         >
       </p>
       <div class="my-auto text-gray-800 cursor-pointer">
