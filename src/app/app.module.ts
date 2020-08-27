@@ -15,27 +15,34 @@ import { ClassesComponent } from './home/classes/classes.component';
 import { StreamComponent } from './home/class/stream/stream.component';
 import { ClassWorkComponent } from './home/class/class-work/class-work.component';
 import { PeopleComponent } from './home/class/people/people.component';
+import {WriteDialogComponent} from './home/class/stream/writeDialog/writeDialog.component';
+import { NotificationComponent } from './home/class/stream/notification/notification.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
-      HomeComponent,
-      HeaderComponent,
-      ClassCardComponent,
-      ClassComponent,
-      ClassesComponent,
-      StreamComponent,
-      ClassWorkComponent,
-      PeopleComponent
-   ],
+    HomeComponent,
+    HeaderComponent,
+    ClassCardComponent,
+    ClassComponent,
+    ClassesComponent,
+    StreamComponent,
+    ClassWorkComponent,
+    PeopleComponent,
+    WriteDialogComponent,
+    NotificationComponent,
+  ],
+  entryComponents: [WriteDialogComponent, NotificationComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+    }),
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

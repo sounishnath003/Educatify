@@ -1,0 +1,31 @@
+<div style="width: 620px">
+  <p class="text-xs">Post for..</p>
+  <button mat-button [matMenuTriggerFor]="menu" class="my-5">
+    Select students
+  </button>
+  <mat-menu #menu="matMenu" yPosition="below">
+    <div class="px-4 py-2">
+      <mat-checkbox>Student 1</mat-checkbox><br />
+      <mat-checkbox>Student 2</mat-checkbox><br />
+      <mat-checkbox>Student 3</mat-checkbox>
+    </div>
+  </mat-menu>
+  <div>
+    <mat-form-field appearance="fill" class="w-full my-4">
+      <mat-label>Write here..</mat-label>
+      <textarea rows="10" matInput></textarea>
+    </mat-form-field>
+  </div>
+  <div class="flex justify-between">
+    <button mat-button [matMenuTriggerFor]="attach_menu">
+      <mat-icon>attachment</mat-icon> Attach
+    </button>
+    <mat-menu #attach_menu="matMenu" yPosition="above">
+      <div class="px-4 py-2">
+        <button mat-button><mat-icon>insert_link</mat-icon>  Link</button><br>
+        <button mat-button><mat-icon>attach_file</mat-icon>  Files</button>
+      </div>
+    </mat-menu>
+    <button mat-button color="primary">Post</button>
+  </div>
+</div>
