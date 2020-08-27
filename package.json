@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve & ngtw watch",
+    "start": "ng serve & ngtw watch --sourceMap=true --progress=true --optimization=true",
+    "hmr": "ng serve & ngtw watch --configuration hmr",
     "build": "ngtw build && ng build --sourceMap=true --progress=true --optimization=true",
     "remote": "ngtw build && ng serve --host=192.168.0.2 --sourceMap=true --progress=true --optimization=true",
     "test": "ng test",
@@ -24,6 +25,7 @@
     "@angular/platform-browser-dynamic": "~10.0.9",
     "@angular/router": "~10.0.9",
     "@angular/service-worker": "~10.0.9",
+    "@ngxs/store": "^3.6.2",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
@@ -32,6 +34,8 @@
     "@angular-devkit/build-angular": "~0.1000.6",
     "@angular/cli": "~10.0.6",
     "@angular/compiler-cli": "~10.0.9",
+    "@angularclass/hmr": "^2.1.3",
+    "@ngxs/hmr-plugin": "^3.6.2",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
