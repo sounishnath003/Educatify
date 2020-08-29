@@ -12,6 +12,7 @@ export class ClassComponent implements OnInit {
     { label: 'Stream', path: 'stream' },
     { label: 'Classwork', path: 'class-work' },
     { label: 'People', path: 'people' },
+    { label: 'Request', path: 'request' },
   ];
   ngOnInit(): void {
   }

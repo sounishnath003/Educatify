@@ -6,6 +6,7 @@ import { ClassComponent } from './home/class/class.component';
 import { StreamComponent } from './home/class/stream/stream.component';
 import { ClassWorkComponent } from './home/class/class-work/class-work.component';
 import { PeopleComponent } from './home/class/people/people.component';
+import { RequestComponent } from './home/class/request/request.component';
 
 const routes: Routes = [
   { path: '',component: HomeComponent, 
@@ -16,6 +17,7 @@ const routes: Routes = [
         {path:'stream',component:StreamComponent},
         {path:'class-work',component:ClassWorkComponent},
         {path:'people',component:PeopleComponent},
+        {path:'request',component:RequestComponent},
       ]}
     ] 
   },
