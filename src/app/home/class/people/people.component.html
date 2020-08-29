@@ -1,1 +1,48 @@
-<p>people</p>
+<div class="teacher_section sm:px-32 px-0">
+  <div class="flex justify-between border-b-2 px-4 pb-2">
+    <p class="text-3xl text-indigo-700">Teachers</p>
+    <mat-icon class="text-indigo-700 cursor-pointer">person_add_alt_1</mat-icon>
+  </div>
+  <div class="person py-4 my-1 px-8 flex justify-between rounded-lg">
+    <div class="flex">
+      <mat-icon class="">
+        <img
+          src="https://avatars0.githubusercontent.com/u/40270033?s=460&u=1b226ea48e266a392c3b213b9bedca00ed7e83ff&v=4"
+          alt="profile icon"
+          class="rounded-full w-64"
+        />
+      </mat-icon>
+      <p class="ml-8">Sounish Nath</p>
+    </div>
+    <mat-icon class="cursor-pointer" [matMenuTriggerFor]="teacherActions"> more_vert </mat-icon>
+  </div>
+      <mat-menu #teacherActions="matMenu">
+        <button mat-menu-item>Email</button>
+        <button mat-menu-item>Remove</button>
+        <button mat-menu-item>Leave</button>
+      </mat-menu>
+</div>
+<div class="students_section sm:px-32 px-0 mt-32">
+  <div class="flex justify-between border-b-2 px-4 pb-2">
+    <p class="text-3xl text-indigo-700">Students</p>
+    <mat-icon class="text-indigo-700 cursor-pointer">person_add_alt_1</mat-icon>
+  </div>
+  <div class="person py-4 my-1 px-8 flex justify-between cursor-pointer hover:bg-indigo-100 rounded-lg">
+    <div class="flex">
+      <mat-icon class="">
+        <img
+          src="https://avatars0.githubusercontent.com/u/40270033?s=460&u=1b226ea48e266a392c3b213b9bedca00ed7e83ff&v=4"
+          alt="profile icon"
+          class="rounded-full w-64"
+        />
+      </mat-icon>
+      <p class="ml-8">Sounish Nath</p>
+    </div>
+    <mat-icon class="cursor-pointer" [matMenuTriggerFor]="teacherActions"> more_vert </mat-icon>
+  </div>
+      <mat-menu #teacherActions="matMenu">
+        <button mat-menu-item>Email</button>
+        <button mat-menu-item>Remove</button>
+        <button mat-menu-item>Leave</button>
+      </mat-menu>
+</div>
