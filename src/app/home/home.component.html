@@ -1,7 +1,13 @@
 <app-header></app-header>
 
-<div class="max-w-5xl pt-6 mx-auto m-auto">
-  <div class="rounded-lg px-2">
-    <router-outlet></router-outlet>
+
+<ng-container *ngIf="isAuthenticated == true; else notAuthenticated">
+  <div class="max-w-5xl pt-6 mx-auto m-auto">
+      <div class="rounded-lg px-2">
+        <router-outlet></router-outlet>
+      </div>
   </div>
-</div>
+</ng-container>
+<ng-template #notAuthenticated>
+  <app-landing-page></app-landing-page>
+</ng-template>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  isAuthenticated: Boolean = false ;
 
-  constructor() { }
+  constructor(private _router: ActivatedRoute) { }
 
   ngOnInit() {
+    // this._authCheck() ;
+  }
+
+  _authCheck() {
+    this._router.queryParams.subscribe((params) => {
+      this.isAuthenticated = params['isAuth'] == 'true' ? true : false ;
+    });
   }
 
 }

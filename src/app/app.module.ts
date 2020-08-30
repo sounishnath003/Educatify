@@ -1,3 +1,5 @@
+import { AuthenticationModule } from './authentication/authentication.module';
+import { LandingPageComponent } from './home/landing-page/landing-page.component';
 import { HeaderComponent } from './common/header/header.component';
 import { MaterialModule } from './Material/Material.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -22,6 +24,10 @@ import { RequestComponent } from './home/class/request/request.component';
 @NgModule({
   declarations: [
     AppComponent,
+      HomeComponent,
+      HeaderComponent,
+      LandingPageComponent
+   ],
     HomeComponent,
     HeaderComponent,
     ClassCardComponent,

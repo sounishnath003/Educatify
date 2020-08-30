@@ -1,3 +1,4 @@
+import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -9,6 +10,17 @@ import { PeopleComponent } from './home/class/people/people.component';
 import { RequestComponent } from './home/class/request/request.component';
 
 const routes: Routes = [
+  {
+    path: 'users/classes/:isAuth',
+    component: HomeComponent,
+    // redirectTo: ''
+  },
+  {
+    path: 'auth',
+    loadChildren: () =>
+      import('./authentication/authentication.module').then(
+        (m) => m.AuthenticationModule
+      ),
   { path: '',component: HomeComponent, 
     children: [
       {path:'',component:ClassesComponent},
