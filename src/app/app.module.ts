@@ -17,17 +17,15 @@ import { ClassesComponent } from './home/classes/classes.component';
 import { StreamComponent } from './home/class/stream/stream.component';
 import { ClassWorkComponent } from './home/class/class-work/class-work.component';
 import { PeopleComponent } from './home/class/people/people.component';
-import {WriteDialogComponent} from './home/class/stream/writeDialog/writeDialog.component';
+import { WriteDialogComponent } from './home/class/stream/writeDialog/writeDialog.component';
 import { NotificationComponent } from './home/class/stream/notification/notification.component';
 import { RequestComponent } from './home/class/request/request.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-      HomeComponent,
-      HeaderComponent,
-      LandingPageComponent
-   ],
+    HeaderComponent,
+    LandingPageComponent,
     HomeComponent,
     HeaderComponent,
     ClassCardComponent,

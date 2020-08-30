@@ -9,35 +9,31 @@
           Email
         </label>
         <input
-          class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          class="appearance-none border border-indigo-600 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           id="email"
           type="text"
           placeholder="flock.sinasini@gmail.com"
         />
       </div>
       <div class="mb-6">
-        <label
-          class="block text-indigo-700 text-sm mb-2"
-          for="password"
-        >
+        <label class="block text-indigo-700 text-sm mb-2" for="password">
           Password
         </label>
         <input
-          class="appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+          class="appearance-none border border-indigo-600 border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
           id="password"
           type="password"
           placeholder="XXX-XXXX-XXX"
         />
         <p class="text-red-500 text-xs italic">Please choose a password.</p>
       </div>
-      <div class="flex items-center justify-between" (click)="signup()" >
+      <div class="flex items-center justify-between" (click)="signup()">
         <button
           class="btn-dark hover:bg-blue-700 tracking-wide hover:text-indigo-500 font py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           type="button"
         >
           Sign up
         </button>
-        <router-outlet></router-outlet>        
         <a
           class="inline-block align-baseline font text-sm text-indigo-700 px-2"
           href="#"

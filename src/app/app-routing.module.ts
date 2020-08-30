@@ -1,7 +1,6 @@
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
 import { ClassesComponent } from './home/classes/classes.component';
 import { ClassComponent } from './home/class/class.component';
 import { StreamComponent } from './home/class/stream/stream.component';
@@ -21,17 +20,24 @@ const routes: Routes = [
       import('./authentication/authentication.module').then(
         (m) => m.AuthenticationModule
       ),
-  { path: '',component: HomeComponent, 
+  },
+  {
+    path: '',
+    component: HomeComponent,
     children: [
-      {path:'',component:ClassesComponent},
-      {path:'class/:classId',component:ClassComponent,children:[
-        {path:'',pathMatch:'full',redirectTo:'stream'},
-        {path:'stream',component:StreamComponent},
-        {path:'class-work',component:ClassWorkComponent},
-        {path:'people',component:PeopleComponent},
-        {path:'request',component:RequestComponent},
-      ]}
-    ] 
+      { path: '', component: ClassesComponent },
+      {
+        path: 'class/:classId',
+        component: ClassComponent,
+        children: [
+          { path: '', pathMatch: 'full', redirectTo: 'stream' },
+          { path: 'stream', component: StreamComponent },
+          { path: 'class-work', component: ClassWorkComponent },
+          { path: 'people', component: PeopleComponent },
+          { path: 'request', component: RequestComponent },
+        ],
+      },
+    ],
   },
 ];
 
