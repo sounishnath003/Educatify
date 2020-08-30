@@ -23,26 +23,48 @@
       <mat-form-field class="w-full" appearance="fill">
         <mat-label>Select topics</mat-label>
         <mat-select>
-          <mat-option vlaue="">
-            Sounish's book
-          </mat-option>
-          <mat-option value="">
-            Post session resource
-          </mat-option>
+          <mat-option vlaue=""> Sounish's book </mat-option>
+          <mat-option value=""> Post session resource </mat-option>
         </mat-select>
       </mat-form-field>
     </div>
     <button
       class="rounded-full px-5 py-3 outline-none bg-indigo-700 flex hover:shadow-lg mb-4 shadow-md text-white"
+      [matMenuTriggerFor]="createMenu"
     >
       <mat-icon>add</mat-icon> Create
     </button>
+    <mat-menu #createMenu="matMenu">
+      <button mat-menu-item>
+        <mat-icon color="primary">assignment</mat-icon>Assignment
+      </button>
+      <button mat-menu-item>
+        <mat-icon color="primary">live_help</mat-icon>Questions
+      </button>
+      <button mat-menu-item>
+        <mat-icon color="primary">extension</mat-icon>Quiz Test
+      </button>
+      <button mat-menu-item>
+        <mat-icon color="primary">class</mat-icon>Materials
+      </button>
+    </mat-menu>
     <div class="topic mt-4 hover:shadow-lg rounded-lg p-4">
-      <p class="text-3xl text-indigo-600 border-b-2">Code task</p>
+      <div class="flex border-b-2 justify-between">
+        <p class="text-3xl text-indigo-600 my-auto">Code task</p>
+        <mat-icon
+          class="my-auto text-indigo-600 cursor-pointer"
+          [matMenuTriggerFor]="topicMenu"
+          >more_vert</mat-icon
+        >
+      </div>
+      <mat-menu #topicMenu="matMenu">
+        <button mat-menu-item>Rename</button>
+        <button mat-menu-item>Delete</button>
+      </mat-menu>
       <hr />
-      <div class="px-4">
+      <div class="px-0">
         <div class="flex border-b justify-between my-1 py-2">
-          <div class="flex">
+          <div class="flex ml-4">
             <div
               class="text-xl text-white rounded-full w-10 h-10 text-center bg-indigo-600"
             >
@@ -52,10 +74,18 @@
               Smallest KMP :Codechef
             </p>
           </div>
-          <mat-icon class="my-auto cursor-pointer">more_vert</mat-icon>
+          <mat-icon
+            class="my-auto cursor-pointer"
+            [matMenuTriggerFor]="topicItemMenu"
+            >more_vert</mat-icon
+          >
         </div>
+        <mat-menu #topicItemMenu="matMenu">
+          <button mat-menu-item>Edit</button>
+          <button mat-menu-item>Delete</button>
+        </mat-menu>
         <div class="flex border-b justify-between my-1 py-2">
-          <div class="flex">
+          <div class="flex ml-4">
             <div
               class="text-xl text-white rounded-full w-10 h-10 text-center bg-indigo-600"
             >
@@ -65,48 +95,35 @@
               Smallest KMP :Codechef
             </p>
           </div>
-          <mat-icon class="my-auto cursor-pointer">more_vert</mat-icon>
+          <mat-icon
+            class="my-auto cursor-pointer"
+            [matMenuTriggerFor]="topicItemMenu"
+            >more_vert</mat-icon
+          >
         </div>
+        <mat-menu #topicItemMenu="matMenu">
+          <button mat-menu-item>Edit</button>
+          <button mat-menu-item>Delete</button>
+        </mat-menu>
       </div>
     </div>
     <div class="topic mt-4 hover:shadow-lg rounded-lg p-4">
-      <p class="text-3xl text-indigo-600 border-b-2">Post Session resource</p>
-      <hr />
-      <div class="px-4">
-        <div class="flex border-b justify-between my-1 py-2">
-          <div class="flex">
-            <div
-              class="text-xl text-white rounded-full w-10 h-10 text-center bg-indigo-600"
-            >
-              <mat-icon class="mt-2">assignment</mat-icon>
-            </div>
-            <p class="my-auto mx-2 px-2 hover:text-indigo-800 cursor-pointer">
-              Smallest KMP :Codechef
-            </p>
-          </div>
-          <mat-icon class="my-auto cursor-pointer">more_vert</mat-icon>
-        </div>
-        <div class="flex border-b justify-between my-1 py-2">
-          <div class="flex">
-            <div
-              class="text-xl text-white rounded-full w-10 h-10 text-center bg-indigo-600"
-            >
-              <mat-icon class="mt-2">assignment</mat-icon>
-            </div>
-            <p class="my-auto mx-2 px-2 hover:text-indigo-800 cursor-pointer">
-              Smallest KMP :Codechef
-            </p>
-          </div>
-          <mat-icon class="my-auto cursor-pointer">more_vert</mat-icon>
-        </div>
+      <div class="flex border-b-2 justify-between">
+        <p class="text-3xl text-indigo-600 my-auto">Post session notes</p>
+        <mat-icon
+          class="my-auto text-indigo-600 cursor-pointer"
+          [matMenuTriggerFor]="topicMenu"
+          >more_vert</mat-icon
+        >
       </div>
-    </div>
-    <div class="topic mt-4 hover:shadow-lg rounded-lg p-4">
-      <p class="text-3xl text-indigo-600 border-b-2">Post Session resource</p>
+      <mat-menu #topicMenu="matMenu">
+        <button mat-menu-item>Rename</button>
+        <button mat-menu-item>Delete</button>
+      </mat-menu>
       <hr />
-      <div class="px-4">
+      <div class="px-0">
         <div class="flex border-b justify-between my-1 py-2">
-          <div class="flex">
+          <div class="flex ml-4">
             <div
               class="text-xl text-white rounded-full w-10 h-10 text-center bg-indigo-600"
             >
@@ -116,10 +133,18 @@
               Smallest KMP :Codechef
             </p>
           </div>
-          <mat-icon class="my-auto cursor-pointer">more_vert</mat-icon>
+          <mat-icon
+            class="my-auto cursor-pointer"
+            [matMenuTriggerFor]="topicItemMenu"
+            >more_vert</mat-icon
+          >
         </div>
+        <mat-menu #topicItemMenu="matMenu">
+          <button mat-menu-item>Edit</button>
+          <button mat-menu-item>Delete</button>
+        </mat-menu>
         <div class="flex border-b justify-between my-1 py-2">
-          <div class="flex">
+          <div class="flex ml-4">
             <div
               class="text-xl text-white rounded-full w-10 h-10 text-center bg-indigo-600"
             >
@@ -129,8 +154,16 @@
               Smallest KMP :Codechef
             </p>
           </div>
-          <mat-icon class="my-auto cursor-pointer">more_vert</mat-icon>
+          <mat-icon
+            class="my-auto cursor-pointer"
+            [matMenuTriggerFor]="topicItemMenu"
+            >more_vert</mat-icon
+          >
         </div>
+        <mat-menu #topicItemMenu="matMenu">
+          <button mat-menu-item>Edit</button>
+          <button mat-menu-item>Delete</button>
+        </mat-menu>
       </div>
     </div>
   </div>
