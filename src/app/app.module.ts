@@ -1,3 +1,4 @@
+import { AuthenticationModule } from './authentication/authentication.module';
 import { LandingPageComponent } from './home/landing-page/landing-page.component';
 import { HeaderComponent } from './common/header/header.component';
 import { MaterialModule } from './Material/Material.module';
@@ -23,7 +24,7 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

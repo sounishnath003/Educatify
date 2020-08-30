@@ -7,11 +7,18 @@ const routes: Routes = [
     path: 'users/classes/:isAuth',
     component: HomeComponent,
     // redirectTo: ''
-  }
+  },
+  {
+    path: 'auth',
+    loadChildren: () =>
+      import('./authentication/authentication.module').then(
+        (m) => m.AuthenticationModule
+      ),
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
