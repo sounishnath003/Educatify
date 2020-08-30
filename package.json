@@ -6,7 +6,7 @@
     "start": "ng serve & ngtw watch --sourceMap=true --progress=true --optimization=true",
     "hmr": "ng serve & ngtw watch --sourceMap=true --progress=true --optimization=true --configuration hmr",
     "build": "ngtw build && ng build --sourceMap=true --progress=true --optimization=true",
-    "remote": "ngtw build && ng serve --host=192.168.0.5 --sourceMap=true --progress=true --optimization=true",
+    "remote": "ngtw build && ng serve --host=192.168.0.3 --sourceMap=true --progress=true --optimization=true",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",

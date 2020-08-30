@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  isAuthenticated: Boolean = false ;
+  isAuthenticated: Boolean = true ;
 
   constructor(private _router: ActivatedRoute) { }
 
