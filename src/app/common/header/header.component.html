@@ -5,10 +5,9 @@
   mode="side"
 >
   <mat-list>
-    <div mat-subheader>Folders</div>
     <mat-list-item>
-      <mat-icon mat-list-icon>home</mat-icon>
-      <div mat-line>Classes</div>
+      <mat-icon mat-list-icon>fact_check</mat-icon>
+      <div mat-line> <a [routerLink]="['']">Classes</a></div>
     </mat-list-item>
     <mat-list-item>
       <mat-icon mat-list-icon>calendar_today</mat-icon>
@@ -23,7 +22,7 @@
   </mat-list>
 </mat-drawer>
 
-<mat-sidenav-container autosize>
+<mat-sidenav-container autosize class="border-b-0 shadow-xs">
   <mat-toolbar class="bg-white">
     <button
       mat-button
@@ -34,7 +33,7 @@
     >
       <mat-icon>menu</mat-icon>
     </button>
-    <span>Welcome Classroom</span>
+    <span> <Span class="text-blue-700 font-semibold text-2xl">Eduiox</Span> Classroom</span>
     <span class="spacer"></span>
     <button
       mat-icon-button

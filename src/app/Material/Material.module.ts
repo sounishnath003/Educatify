@@ -35,6 +35,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import {MatBadgeModule} from '@angular/material/badge'
 
 @NgModule({
   imports: [
@@ -75,6 +76,7 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
     MatPaginatorModule,
     MatNativeDateModule,
     MatBottomSheetModule,
+    MatBadgeModule,
   ],
   exports: [
     MatBottomSheetModule,
@@ -113,6 +115,7 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
+    MatBadgeModule,
   ],
 })
 export class MaterialModule {}
