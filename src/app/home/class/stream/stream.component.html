@@ -1,0 +1,33 @@
+<div
+  class="pt-10 pb-20 px-16 text-white rounded-lg"
+  [style.background-color]="currClassData.colorCode"
+>
+  <h2 class="text-3xl">{{ currClassData.title }}</h2>
+  <h4>{{ currClassData.desc }}</h4>
+  <p class="text-sm pt-2">Class Code : {{ currClassData.classCode }}</p>
+</div>
+<div class="flex mt-4 sm:flex-row flex-col">
+  <div (click)="openNotificationPanel()" class="bg-white cursor-pointer px-4 py-4 sm:h-40 overflow-hidden sm:w-1/4 w-full mr-2 rounded shadow">
+    <p><span matBadge="0" matBadgeOverlap="false" matBadgeColor="warn">Notification & Upcoming</span></p>
+  </div>
+  <div class="bg-white shadow rounded py-4 px-4 sm:w-3/4 w-full sm:mt-0 mt-2">
+    <mat-expansion-panel class="w-full py-6" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <mat-icon class="mat-18">
+            <img
+              src="https://avatars0.githubusercontent.com/u/40270033?s=460&u=1b226ea48e266a392c3b213b9bedca00ed7e83ff&v=4"
+              alt="profile icon"
+              class="rounded-full w-64"
+            />
+          </mat-icon>
+        </mat-panel-title>
+        <mat-panel-description
+          >share something with your class..
+        </mat-panel-description>
+        <mat-icon>post_add</mat-icon>
+      </mat-expansion-panel-header>
+      <button mat-button (click)="openWritePanel()">Write your post here..</button>
+    </mat-expansion-panel>
+  </div>
+</div>
