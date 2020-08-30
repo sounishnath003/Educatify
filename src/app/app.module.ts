@@ -1,3 +1,4 @@
+import { LandingPageComponent } from './home/landing-page/landing-page.component';
 import { HeaderComponent } from './common/header/header.component';
 import { MaterialModule } from './Material/Material.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -14,7 +15,8 @@ import { HomeComponent } from './home/home.component';
   declarations: [	
     AppComponent,
       HomeComponent,
-      HeaderComponent
+      HeaderComponent,
+      LandingPageComponent
    ],
   imports: [
     BrowserModule,
