@@ -35,7 +35,7 @@
       <mat-icon>add</mat-icon> Create
     </button>
     <mat-menu #createMenu="matMenu">
-      <button mat-menu-item>
+      <button mat-menu-item (click)="openAssignment()">
         <mat-icon color="primary">assignment</mat-icon>Assignment
       </button>
       <button mat-menu-item>
