@@ -3,15 +3,15 @@
     <mat-icon (click)="closeDialog()" class="hover:text-gray-700 cursor-pointer"
       >close</mat-icon
     >
-    <p class="mx-4">Assignment</p>
+    <p class="mx-4">{{dialogTitle}}</p>
   </div>
-  <button mat-button color="primary" class="my-auto">Assign</button>
+  <button mat-button color="primary" class="my-auto">{{btn}}</button>
 </div>
 <div class="flex mt-5 sm:flex-row flex-col">
   <div class="sm:w-4/6 w-full">
     <form class="assignment-form">
       <mat-form-field class="w-full" appearance="fill">
-        <mat-label>Title</mat-label>
+        <mat-label>{{inputText}}</mat-label>
         <input matInput placeholder="" />
       </mat-form-field>
 
@@ -42,7 +42,7 @@
         <mat-checkbox>Student 3</mat-checkbox>
       </div>
     </mat-menu>
-    <div class="mt-2">
+    <div class="mt-2" *ngIf="isDate">
       <p class="py-2">Due :</p>
       <mat-form-field class="w-full" appearance="fill">
         <mat-label>Choose a date</mat-label>

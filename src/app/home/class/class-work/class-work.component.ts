@@ -12,10 +12,11 @@ export class ClassWorkComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  openAssignment(){
+  openAssignment(type){
     const dialogConfig = new MatDialogConfig()
     dialogConfig.width = "100%"
     dialogConfig.height = "100%"
+    dialogConfig.data = { type: type };
     this.dialog.open(AssignmentComponent,dialogConfig)
   }
 }
