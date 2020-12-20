@@ -20,6 +20,9 @@ import { PeopleComponent } from './home/class/people/people.component';
 import { WriteDialogComponent } from './home/class/stream/writeDialog/writeDialog.component';
 import { NotificationComponent } from './home/class/stream/notification/notification.component';
 import { RequestComponent } from './home/class/request/request.component';
+import { AssignmentComponent } from './home/class/class-work/assignment/assignment.component';
+import { LinkComponent } from './home/class/utilDialog/link/link.component';
+import { FileUploadComponent } from './home/class/utilDialog/file-upload/file-upload.component';
 
 @NgModule({
   declarations: [
@@ -37,8 +40,17 @@ import { RequestComponent } from './home/class/request/request.component';
     WriteDialogComponent,
     NotificationComponent,
     RequestComponent,
+    AssignmentComponent,
+    LinkComponent,
+    FileUploadComponent,
   ],
-  entryComponents: [WriteDialogComponent, NotificationComponent],
+  entryComponents: [
+    WriteDialogComponent,
+    NotificationComponent,
+    AssignmentComponent,
+    LinkComponent,
+    FileUploadComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

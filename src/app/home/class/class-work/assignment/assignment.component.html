@@ -1,0 +1,70 @@
+<div class="flex justify-between">
+  <div class="flex my-auto">
+    <mat-icon (click)="closeDialog()" class="hover:text-gray-700 cursor-pointer"
+      >close</mat-icon
+    >
+    <p class="mx-4">{{dialogTitle}}</p>
+  </div>
+  <button mat-button color="primary" class="my-auto">{{btn}}</button>
+</div>
+<div class="flex mt-5 sm:flex-row flex-col">
+  <div class="sm:w-4/6 w-full">
+    <form class="assignment-form">
+      <mat-form-field class="w-full" appearance="fill">
+        <mat-label>{{inputText}}</mat-label>
+        <input matInput placeholder="" />
+      </mat-form-field>
+
+      <mat-form-field class="w-full" appearance="fill">
+        <mat-label>Description</mat-label>
+        <textarea matInput placeholder="" rows="10"></textarea>
+      </mat-form-field>
+    </form>
+    <button mat-button class="mb-4" [matMenuTriggerFor]="attach_menu">
+      <mat-icon>attachment</mat-icon> Attach
+    </button>
+    <mat-menu #attach_menu="matMenu" yPosition="above">
+      <div class="px-4 py-2">
+        <button mat-button (click)="openLink()"><mat-icon>insert_link</mat-icon> Link</button><br />
+        <button mat-button (click)="openFileUpload()"><mat-icon>attach_file</mat-icon> Files</button>
+      </div>
+    </mat-menu>
+  </div>
+  <div class="sm:w-2/6 sm:border-0 border-t w-full sm:pl-6 pl-0">
+    <p class="py-2">for..</p>
+    <button mat-button [matMenuTriggerFor]="menu" class="my-5">
+      Select students
+    </button>
+    <mat-menu #menu="matMenu" yPosition="below">
+      <div class="px-4 py-2">
+        <mat-checkbox>Student 1</mat-checkbox><br />
+        <mat-checkbox>Student 2</mat-checkbox><br />
+        <mat-checkbox>Student 3</mat-checkbox>
+      </div>
+    </mat-menu>
+    <div class="mt-2" *ngIf="isDate">
+      <p class="py-2">Due :</p>
+      <mat-form-field class="w-full" appearance="fill">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker" />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div class="mt-2">
+      <p class="py-2">Topic :</p>
+      <mat-form-field appearance="fill" class="w-full" *ngIf="!isCheck">
+        <mat-label>Select listing topic</mat-label>
+        <mat-select>
+          <mat-option value="topic 0">topic 0</mat-option>
+          <mat-option value="topic 1">topic 1</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="w-full" appearance="fill" *ngIf="isCheck">
+        <mat-label>Create new topic</mat-label>
+        <input matInput placeholder="" />
+      </mat-form-field>
+      <mat-checkbox class="" [checked]="isCheck" (change)="isCheck = !isCheck">Topic not in list ?</mat-checkbox>
+    </div>
+  </div>
+</div>

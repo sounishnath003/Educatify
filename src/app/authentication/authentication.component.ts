@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { relative } from 'path';
 
 @Component({
   selector: 'app-authentication',
@@ -12,7 +11,12 @@ export class AuthenticationComponent implements OnInit {
 
   ngOnInit() {}
 
-  signup(){
-    this._router.navigateByUrl('/auth/user/registration') ;
+  loginAuth() {
+    console.log("i am loggedin");
+    
+  }
+
+  signup() {
+    this._router.navigateByUrl('/auth/user/registration');
   }
 }

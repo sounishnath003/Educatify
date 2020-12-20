@@ -50,5 +50,12 @@
 
 <mat-dialog-actions align="end">
   <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Login</button>
+  <button
+    mat-button
+    (click)="loginAuth()"
+    [mat-dialog-close]="true"
+    cdkFocusInitial
+  >
+    Login
+  </button>
 </mat-dialog-actions>
