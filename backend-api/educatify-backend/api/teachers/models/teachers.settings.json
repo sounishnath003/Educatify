@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teachers",
+  "info": {
+    "name": "Teachers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "password": {
+      "type": "password"
+    },
+    "facultyCode": {
+      "type": "string"
+    },
+    "classrooms": {
+      "via": "teacher",
+      "collection": "classrooms"
+    }
+  }
+}
