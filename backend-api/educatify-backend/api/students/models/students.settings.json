@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "name": "Students"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "password": {
+      "type": "password"
+    },
+    "email": {
+      "type": "email"
+    },
+    "studentCode": {
+      "type": "string"
+    },
+    "classrooms": {
+      "collection": "classrooms"
+    }
+  }
+}

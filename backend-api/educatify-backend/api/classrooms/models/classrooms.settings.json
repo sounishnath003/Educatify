@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "classrooms",
+  "info": {
+    "name": "Classrooms"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "className": {
+      "type": "string"
+    },
+    "subjectCode": {
+      "type": "string"
+    },
+    "students": {
+      "collection": "students"
+    },
+    "teacher": {
+      "model": "teachers"
+    }
+  }
+}
