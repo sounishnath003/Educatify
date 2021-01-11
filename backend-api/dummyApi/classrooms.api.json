@@ -1,0 +1,358 @@
+[
+  {
+    "id": 1,
+    "className": "Computer Networks",
+    "subjectCode": "CS603",
+    "teacher": {
+      "id": 2,
+      "name": "Arpita Roy",
+      "email": "arpita@gmail.com",
+      "facultyCode": "CSE-F-AR",
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2021-01-11T10:33:27.865Z",
+      "updated_at": "2021-01-11T11:09:31.002Z"
+    },
+    "created_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "created_at": "2021-01-11T10:35:35.938Z",
+    "updated_at": "2021-01-11T11:12:44.523Z",
+    "students": [
+      {
+        "id": 1,
+        "name": "Sounish Nath",
+        "email": "flock.sinasini@gmail.com",
+        "studentCode": "BSSE/UT/CS/17/056",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:31:05.930Z",
+        "updated_at": "2021-01-11T10:31:05.946Z"
+      },
+      {
+        "id": 2,
+        "name": "Satabdi Roy",
+        "email": "satabdi@gmail.com",
+        "studentCode": "BSSE/UT/CS/17/009",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:31:31.380Z",
+        "updated_at": "2021-01-11T10:31:31.394Z"
+      },
+      {
+        "id": 5,
+        "name": "Akash Goswami",
+        "email": "akash@gmail.com",
+        "studentCode": "BSSE/UT/CS/17/012",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T11:00:25.427Z",
+        "updated_at": "2021-01-11T11:00:25.441Z"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "className": "Programming With JAVA",
+    "subjectCode": "CS601",
+    "teacher": {
+      "id": 1,
+      "name": "Somnath Basak",
+      "email": "somnath@gmail.com",
+      "facultyCode": "CSE-F-SB",
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2021-01-11T10:32:44.340Z",
+      "updated_at": "2021-01-11T11:08:05.529Z"
+    },
+    "created_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "created_at": "2021-01-11T10:35:59.427Z",
+    "updated_at": "2021-01-11T11:13:21.156Z",
+    "students": [
+      {
+        "id": 1,
+        "name": "Sounish Nath",
+        "email": "flock.sinasini@gmail.com",
+        "studentCode": "BSSE/UT/CS/17/056",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:31:05.930Z",
+        "updated_at": "2021-01-11T10:31:05.946Z"
+      },
+      {
+        "id": 3,
+        "name": "Nirmalya Gayen",
+        "email": "nirmalya@gmail.com",
+        "studentCode": "BSSE/UT/CS/17/023",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:32:06.801Z",
+        "updated_at": "2021-01-11T10:32:06.824Z"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "className": "Operating Systems",
+    "subjectCode": "CS602",
+    "teacher": {
+      "id": 3,
+      "name": "Gourav Roy",
+      "email": "gourav@gmail.com",
+      "facultyCode": "CSE-F-GR",
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2021-01-11T10:58:41.291Z",
+      "updated_at": "2021-01-11T11:07:55.480Z"
+    },
+    "created_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "created_at": "2021-01-11T10:59:23.345Z",
+    "updated_at": "2021-01-11T11:13:12.337Z",
+    "students": [
+      {
+        "id": 1,
+        "name": "Sounish Nath",
+        "email": "flock.sinasini@gmail.com",
+        "studentCode": "BSSE/UT/CS/17/056",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:31:05.930Z",
+        "updated_at": "2021-01-11T10:31:05.946Z"
+      },
+      {
+        "id": 4,
+        "name": "Debayan Dhar",
+        "email": "debayan@gmail.com",
+        "studentCode": "BSSE/UT/CS/17/032",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:57:32.522Z",
+        "updated_at": "2021-01-11T10:57:32.565Z"
+      },
+      {
+        "id": 3,
+        "name": "Nirmalya Gayen",
+        "email": "nirmalya@gmail.com",
+        "studentCode": "BSSE/UT/CS/17/023",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:32:06.801Z",
+        "updated_at": "2021-01-11T10:32:06.824Z"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "className": "Data Structures & Algorithms",
+    "subjectCode": "CS401",
+    "teacher": {
+      "id": 4,
+      "name": "Arup kadia",
+      "email": "arup@gmail.com",
+      "facultyCode": "CSE-F-AK",
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2021-01-11T10:59:48.009Z",
+      "updated_at": "2021-01-11T11:07:49.486Z"
+    },
+    "created_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "created_at": "2021-01-11T11:00:57.779Z",
+    "updated_at": "2021-01-11T11:13:05.848Z",
+    "students": [
+      {
+        "id": 3,
+        "name": "Nirmalya Gayen",
+        "email": "nirmalya@gmail.com",
+        "studentCode": "BSSE/UT/CS/17/023",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:32:06.801Z",
+        "updated_at": "2021-01-11T10:32:06.824Z"
+      },
+      {
+        "id": 4,
+        "name": "Debayan Dhar",
+        "email": "debayan@gmail.com",
+        "studentCode": "BSSE/UT/CS/17/032",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:57:32.522Z",
+        "updated_at": "2021-01-11T10:57:32.565Z"
+      },
+      {
+        "id": 2,
+        "name": "Satabdi Roy",
+        "email": "satabdi@gmail.com",
+        "studentCode": "BSSE/UT/CS/17/009",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:31:31.380Z",
+        "updated_at": "2021-01-11T10:31:31.394Z"
+      },
+      {
+        "id": 5,
+        "name": "Akash Goswami",
+        "email": "akash@gmail.com",
+        "studentCode": "BSSE/UT/CS/17/012",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T11:00:25.427Z",
+        "updated_at": "2021-01-11T11:00:25.441Z"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "className": "Automata Knowleadge",
+    "subjectCode": "CS201",
+    "teacher": {
+      "id": 2,
+      "name": "Arpita Roy",
+      "email": "arpita@gmail.com",
+      "facultyCode": "CSE-F-AR",
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2021-01-11T10:33:27.865Z",
+      "updated_at": "2021-01-11T11:09:31.002Z"
+    },
+    "created_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "created_at": "2021-01-11T11:09:30.972Z",
+    "updated_at": "2021-01-11T11:12:35.468Z",
+    "students": [
+      {
+        "id": 3,
+        "name": "Nirmalya Gayen",
+        "email": "nirmalya@gmail.com",
+        "studentCode": "BSSE/UT/CS/17/023",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:32:06.801Z",
+        "updated_at": "2021-01-11T10:32:06.824Z"
+      },
+      {
+        "id": 5,
+        "name": "Akash Goswami",
+        "email": "akash@gmail.com",
+        "studentCode": "BSSE/UT/CS/17/012",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T11:00:25.427Z",
+        "updated_at": "2021-01-11T11:00:25.441Z"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "className": "HTML Tranning Workshop",
+    "subjectCode": "CS701",
+    "teacher": {
+      "id": 5,
+      "name": "Somnath Dey",
+      "email": "somnathd@gmail.com",
+      "facultyCode": "CSE-F-SD",
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2021-01-11T11:46:57.644Z",
+      "updated_at": "2021-01-11T11:46:57.677Z"
+    },
+    "created_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "created_at": "2021-01-11T11:46:19.335Z",
+    "updated_at": "2021-01-11T11:46:57.663Z",
+    "students": [
+      {
+        "id": 4,
+        "name": "Debayan Dhar",
+        "email": "debayan@gmail.com",
+        "studentCode": "BSSE/UT/CS/17/032",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:57:32.522Z",
+        "updated_at": "2021-01-11T10:57:32.565Z"
+      },
+      {
+        "id": 2,
+        "name": "Satabdi Roy",
+        "email": "satabdi@gmail.com",
+        "studentCode": "BSSE/UT/CS/17/009",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:31:31.380Z",
+        "updated_at": "2021-01-11T10:31:31.394Z"
+      },
+      {
+        "id": 1,
+        "name": "Sounish Nath",
+        "email": "flock.sinasini@gmail.com",
+        "studentCode": "BSSE/UT/CS/17/056",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:31:05.930Z",
+        "updated_at": "2021-01-11T10:31:05.946Z"
+      }
+    ]
+  }
+]

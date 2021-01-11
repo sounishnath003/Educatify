@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "name": "Sounish Nath",
+    "email": "flock.sinasini@gmail.com",
+    "studentCode": "BSSE/UT/CS/17/056",
+    "created_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "created_at": "2021-01-11T10:31:05.930Z",
+    "updated_at": "2021-01-11T10:31:05.946Z",
+    "classrooms": [
+      {
+        "id": 1,
+        "className": "Computer Networks",
+        "subjectCode": "CS603",
+        "teacher": 2,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:35:35.938Z",
+        "updated_at": "2021-01-11T11:12:44.523Z"
+      },
+      {
+        "id": 2,
+        "className": "Programming With JAVA",
+        "subjectCode": "CS601",
+        "teacher": 1,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:35:59.427Z",
+        "updated_at": "2021-01-11T11:13:21.156Z"
+      },
+      {
+        "id": 3,
+        "className": "Operating Systems",
+        "subjectCode": "CS602",
+        "teacher": 3,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:59:23.345Z",
+        "updated_at": "2021-01-11T11:13:12.337Z"
+      },
+      {
+        "id": 6,
+        "className": "HTML Tranning Workshop",
+        "subjectCode": "CS701",
+        "teacher": 5,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T11:46:19.335Z",
+        "updated_at": "2021-01-11T11:46:57.663Z"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Satabdi Roy",
+    "email": "satabdi@gmail.com",
+    "studentCode": "BSSE/UT/CS/17/009",
+    "created_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "created_at": "2021-01-11T10:31:31.380Z",
+    "updated_at": "2021-01-11T10:31:31.394Z",
+    "classrooms": [
+      {
+        "id": 1,
+        "className": "Computer Networks",
+        "subjectCode": "CS603",
+        "teacher": 2,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:35:35.938Z",
+        "updated_at": "2021-01-11T11:12:44.523Z"
+      },
+      {
+        "id": 4,
+        "className": "Data Structures & Algorithms",
+        "subjectCode": "CS401",
+        "teacher": 4,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T11:00:57.779Z",
+        "updated_at": "2021-01-11T11:13:05.848Z"
+      },
+      {
+        "id": 6,
+        "className": "HTML Tranning Workshop",
+        "subjectCode": "CS701",
+        "teacher": 5,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T11:46:19.335Z",
+        "updated_at": "2021-01-11T11:46:57.663Z"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Nirmalya Gayen",
+    "email": "nirmalya@gmail.com",
+    "studentCode": "BSSE/UT/CS/17/023",
+    "created_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "created_at": "2021-01-11T10:32:06.801Z",
+    "updated_at": "2021-01-11T10:32:06.824Z",
+    "classrooms": [
+      {
+        "id": 2,
+        "className": "Programming With JAVA",
+        "subjectCode": "CS601",
+        "teacher": 1,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:35:59.427Z",
+        "updated_at": "2021-01-11T11:13:21.156Z"
+      },
+      {
+        "id": 3,
+        "className": "Operating Systems",
+        "subjectCode": "CS602",
+        "teacher": 3,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:59:23.345Z",
+        "updated_at": "2021-01-11T11:13:12.337Z"
+      },
+      {
+        "id": 4,
+        "className": "Data Structures & Algorithms",
+        "subjectCode": "CS401",
+        "teacher": 4,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T11:00:57.779Z",
+        "updated_at": "2021-01-11T11:13:05.848Z"
+      },
+      {
+        "id": 5,
+        "className": "Automata Knowleadge",
+        "subjectCode": "CS201",
+        "teacher": 2,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T11:09:30.972Z",
+        "updated_at": "2021-01-11T11:12:35.468Z"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Debayan Dhar",
+    "email": "debayan@gmail.com",
+    "studentCode": "BSSE/UT/CS/17/032",
+    "created_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "created_at": "2021-01-11T10:57:32.522Z",
+    "updated_at": "2021-01-11T10:57:32.565Z",
+    "classrooms": [
+      {
+        "id": 3,
+        "className": "Operating Systems",
+        "subjectCode": "CS602",
+        "teacher": 3,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:59:23.345Z",
+        "updated_at": "2021-01-11T11:13:12.337Z"
+      },
+      {
+        "id": 4,
+        "className": "Data Structures & Algorithms",
+        "subjectCode": "CS401",
+        "teacher": 4,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T11:00:57.779Z",
+        "updated_at": "2021-01-11T11:13:05.848Z"
+      },
+      {
+        "id": 6,
+        "className": "HTML Tranning Workshop",
+        "subjectCode": "CS701",
+        "teacher": 5,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T11:46:19.335Z",
+        "updated_at": "2021-01-11T11:46:57.663Z"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Akash Goswami",
+    "email": "akash@gmail.com",
+    "studentCode": "BSSE/UT/CS/17/012",
+    "created_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "created_at": "2021-01-11T11:00:25.427Z",
+    "updated_at": "2021-01-11T11:00:25.441Z",
+    "classrooms": [
+      {
+        "id": 4,
+        "className": "Data Structures & Algorithms",
+        "subjectCode": "CS401",
+        "teacher": 4,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T11:00:57.779Z",
+        "updated_at": "2021-01-11T11:13:05.848Z"
+      },
+      {
+        "id": 1,
+        "className": "Computer Networks",
+        "subjectCode": "CS603",
+        "teacher": 2,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:35:35.938Z",
+        "updated_at": "2021-01-11T11:12:44.523Z"
+      },
+      {
+        "id": 5,
+        "className": "Automata Knowleadge",
+        "subjectCode": "CS201",
+        "teacher": 2,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T11:09:30.972Z",
+        "updated_at": "2021-01-11T11:12:35.468Z"
+      }
+    ]
+  }
+]

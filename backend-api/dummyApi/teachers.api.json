@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "name": "Somnath Basak",
+    "email": "somnath@gmail.com",
+    "facultyCode": "CSE-F-SB",
+    "created_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "created_at": "2021-01-11T10:32:44.340Z",
+    "updated_at": "2021-01-11T11:08:05.529Z",
+    "classrooms": [
+      {
+        "id": 2,
+        "className": "Programming With JAVA",
+        "subjectCode": "CS601",
+        "teacher": 1,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:35:59.427Z",
+        "updated_at": "2021-01-11T11:13:21.156Z"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Arpita Roy",
+    "email": "arpita@gmail.com",
+    "facultyCode": "CSE-F-AR",
+    "created_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "created_at": "2021-01-11T10:33:27.865Z",
+    "updated_at": "2021-01-11T11:09:31.002Z",
+    "classrooms": [
+      {
+        "id": 1,
+        "className": "Computer Networks",
+        "subjectCode": "CS603",
+        "teacher": 2,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:35:35.938Z",
+        "updated_at": "2021-01-11T11:12:44.523Z"
+      },
+      {
+        "id": 5,
+        "className": "Automata Knowleadge",
+        "subjectCode": "CS201",
+        "teacher": 2,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T11:09:30.972Z",
+        "updated_at": "2021-01-11T11:12:35.468Z"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Gourav Roy",
+    "email": "gourav@gmail.com",
+    "facultyCode": "CSE-F-GR",
+    "created_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "created_at": "2021-01-11T10:58:41.291Z",
+    "updated_at": "2021-01-11T11:07:55.480Z",
+    "classrooms": [
+      {
+        "id": 3,
+        "className": "Operating Systems",
+        "subjectCode": "CS602",
+        "teacher": 3,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T10:59:23.345Z",
+        "updated_at": "2021-01-11T11:13:12.337Z"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Arup kadia",
+    "email": "arup@gmail.com",
+    "facultyCode": "CSE-F-AK",
+    "created_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "created_at": "2021-01-11T10:59:48.009Z",
+    "updated_at": "2021-01-11T11:07:49.486Z",
+    "classrooms": [
+      {
+        "id": 4,
+        "className": "Data Structures & Algorithms",
+        "subjectCode": "CS401",
+        "teacher": 4,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T11:00:57.779Z",
+        "updated_at": "2021-01-11T11:13:05.848Z"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Somnath Dey",
+    "email": "somnathd@gmail.com",
+    "facultyCode": "CSE-F-SD",
+    "created_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Sounish",
+      "lastname": "Nath",
+      "username": null
+    },
+    "created_at": "2021-01-11T11:46:57.644Z",
+    "updated_at": "2021-01-11T11:46:57.677Z",
+    "classrooms": [
+      {
+        "id": 6,
+        "className": "HTML Tranning Workshop",
+        "subjectCode": "CS701",
+        "teacher": 5,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2021-01-11T11:46:19.335Z",
+        "updated_at": "2021-01-11T11:46:57.663Z"
+      }
+    ]
+  }
+]
