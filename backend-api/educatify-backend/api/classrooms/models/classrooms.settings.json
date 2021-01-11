@@ -20,10 +20,9 @@
       "via": "classrooms",
       "dominant": true
     },
-    "teachers": {
-      "collection": "teachers",
-      "via": "classrooms",
-      "dominant": true
+    "teacher": {
+      "model": "teachers",
+      "via": "classrooms"
     }
   }
 }
