@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve & ngtw watch --sourceMap=true --progress=true --optimization=true",
+    "start": "ng serve & ngtw watch",
     "hmr": "ng serve & ngtw watch --sourceMap=true --progress=true --optimization=true --configuration hmr",
     "build": "ngtw build && ng build --sourceMap=true --progress=true --optimization=true",
     "remote": "ngtw build && ng serve --host=192.168.0.3 --sourceMap=true --progress=true --optimization=true",
