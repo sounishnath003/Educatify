@@ -12,8 +12,7 @@ export class AuthenticationComponent implements OnInit {
   ngOnInit() {}
 
   loginAuth() {
-    console.log("i am loggedin");
-    
+    this._router.navigate(['/'], { queryParams: { isAuth: true } });
   }
 
   signup() {

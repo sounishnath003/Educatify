@@ -13,6 +13,7 @@
           id="email"
           type="text"
           placeholder="flock.sinasini@gmail.com"
+          required
         />
       </div>
       <div class="mb-6">
@@ -24,6 +25,7 @@
           id="password"
           type="password"
           placeholder="XXX-XXXX-XXX"
+          required
         />
         <p class="text-red-500 text-xs italic">Please choose a password.</p>
       </div>
@@ -51,6 +53,7 @@
 <mat-dialog-actions align="end">
   <button mat-button mat-dialog-close>Cancel</button>
   <button
+  type="submit"
     mat-button
     (click)="loginAuth()"
     [mat-dialog-close]="true"
