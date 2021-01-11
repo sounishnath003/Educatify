@@ -16,10 +16,14 @@
       "type": "string"
     },
     "students": {
-      "collection": "students"
+      "collection": "students",
+      "via": "classrooms",
+      "dominant": true
     },
-    "teacher": {
-      "model": "teachers"
+    "teachers": {
+      "collection": "teachers",
+      "via": "classrooms",
+      "dominant": true
     }
   }
 }
