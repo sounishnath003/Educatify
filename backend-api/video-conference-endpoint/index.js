@@ -8,11 +8,10 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(bodyParser.json(), cors());
-app.use(bodyParser.urlencoded({ extended: true }));
 app.options("*", cors());
 
 app.post("/", async (req, res) => {
-  const timestamp = new Date().getTime() - 30000;
+  const timestamp = new Date().getTime();
   const msg = Buffer.from(
     process.env.API_KEY + req.body.meetingNumber + timestamp + req.body.role
   ).toString("base64");
