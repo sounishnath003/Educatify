@@ -8,10 +8,11 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(bodyParser.json(), cors());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.options("*", cors());
 
 app.post("/", async (req, res) => {
-  const timestamp = new Date().getTime();
+  const timestamp = new Date().getTime() - 30000;
   const msg = Buffer.from(
     process.env.API_KEY + req.body.meetingNumber + timestamp + req.body.role
   ).toString("base64");
@@ -26,8 +27,18 @@ app.post("/", async (req, res) => {
   await res.json({
     signature: signature,
   });
+  console.log({ signature });
 });
 
 app.listen(port, () =>
   console.log(`Video Conferencing Credentials generator on port ${port}!`)
 );
+
+// res = await fetch("http://localhost:5000/", {
+//   method: "POST",
+//   header: { "Content-Type": "application/json" },
+//   body: {
+//     meetingNumber: "123456789",
+//     role: 0,
+//   },
+// }).then((r) => r.json());
