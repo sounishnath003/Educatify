@@ -7,9 +7,10 @@ import { StreamComponent } from './class/stream/stream.component';
 import { ClassWorkComponent } from './class/class-work/class-work.component';
 import { PeopleComponent } from './class/people/people.component';
 import { RequestComponent } from './class/request/request.component';
+import { MeetingRoomComponent } from './class/meeting-room/meeting-room.component';
 
 const routes: Routes = [
-    {
+  {
     path: '',
     component: HomeComponent,
     children: [
@@ -23,10 +24,11 @@ const routes: Routes = [
           { path: 'class-work', component: ClassWorkComponent },
           { path: 'people', component: PeopleComponent },
           { path: 'request', component: RequestComponent },
+          { path: 'meeting', component: MeetingRoomComponent },
         ],
       },
     ],
-  }
+  },
 ];
 
 @NgModule({

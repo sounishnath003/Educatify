@@ -3,14 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "yarn exec ng serve && yarn exec ngtw watch",
     "hmr": "ng serve & ngtw watch --sourceMap=true --progress=true --optimization=true --configuration hmr",
     "build": "ngtw build && ng build --sourceMap=true --progress=true --optimization=true",
     "remote": "ngtw build && ng serve --host=192.168.0.3 --sourceMap=true --progress=true --optimization=true",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prestart": "ngtw build"
+    "prestart": "yarn exec ngtw build"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +27,7 @@
     "@angular/router": "~10.0.9",
     "@angular/service-worker": "~10.0.9",
     "@ngxs/store": "^3.6.2",
+    "@zoomus/websdk": "^1.8.6",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
@@ -49,7 +50,7 @@
     "karma-jasmine": "~3.3.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "protractor": "~7.0.0",
-    "tailwindcss": "^1.7.3",
+    "tailwindcss": "^2.0.2",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"

@@ -23,6 +23,7 @@ import { RequestComponent } from './home/class/request/request.component';
 import { AssignmentComponent } from './home/class/class-work/assignment/assignment.component';
 import { LinkComponent } from './home/class/utilDialog/link/link.component';
 import { FileUploadComponent } from './home/class/utilDialog/file-upload/file-upload.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { FileUploadComponent } from './home/class/utilDialog/file-upload/file-up
     FileUploadComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', {

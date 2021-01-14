@@ -13,7 +13,7 @@ export class ClassComponent implements OnInit {
     { label: 'Classwork', path: 'class-work' },
     { label: 'People', path: 'people' },
     { label: 'Request', path: 'request' },
+    { label: 'Meeting Room', path: 'meeting' },
   ];
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 }
