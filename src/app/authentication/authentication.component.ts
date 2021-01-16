@@ -26,7 +26,7 @@ export class AuthenticationComponent implements OnInit {
   async loginAuth() {
     console.log(this.email, this.password);
 
-    const resp = await this.authService.loginAsStudent(
+    const resp = await this.authService.loginAuthorization(
       this.email,
       this.password
     );
@@ -34,8 +34,8 @@ export class AuthenticationComponent implements OnInit {
     if (resp === null) {
       alert('Decide are you teacher/student?');
     } else {
-      alert('Welcome In,! ' + resp.name);
-      sessionStorage['username']=resp.name;
+      sessionStorage['username'] = resp.name;
+      sessionStorage['loggedInUser'] = JSON.stringify(resp);
       window.location.reload();
     }
   }

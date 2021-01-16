@@ -9,7 +9,7 @@ const routes: Routes = [
     component: AuthenticationComponent,
     children: [
       {
-        path: 'auth/user/registration',
+        path: '/auth/user/registration',
         component: SignupComponent
       }
     ],

@@ -1,12 +1,13 @@
-export interface IStudent {
+export interface ILoggedUser {
   id: number;
   name: string;
   email: string;
-  studentCode: string;
-  created_by: AtedBy;
-  updated_by: AtedBy;
-  created_at: Date;
-  updated_at: Date;
+  studentCode?: string;
+  facultyCode?: string;
+  created_by?: AtedBy;
+  updated_by?: AtedBy;
+  created_at?: Date;
+  updated_at?: Date;
   classrooms: Classroom[];
 }
 
