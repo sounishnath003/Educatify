@@ -14,7 +14,6 @@ headerOptions.set('Content-Type', 'application/json');
 export class AuthService {
   private allTeachers: ILoggedUser[] = [];
   private allStudents: ILoggedUser[] = [];
-  public loggedInUserDetails: ILoggedUser;
 
   constructor(private http: HttpClient) {}
 
@@ -29,7 +28,7 @@ export class AuthService {
     this.allStudents.push(...serverResp2);
   }
 
-  async loginAuthorization(email: string, code: string) {
+  async loginAuthorization(email: string, code: string): Promise<ILoggedUser> {
     await this.getAllUsers();
     for (const student of this.allStudents) {
       if (student.email === email && student.studentCode === code) {

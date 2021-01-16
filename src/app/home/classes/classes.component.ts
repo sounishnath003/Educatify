@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ClassData} from '../../models/classData.model'
+import { Classroom } from 'src/app/models/loggedUser.model';
+import { SharedDataService } from 'src/app/services/sharedData.service';
+import { ClassData } from '../../models/classData.model';
 
 @Component({
   selector: 'app-classes',
@@ -7,9 +9,17 @@ import {ClassData} from '../../models/classData.model'
   styleUrls: ['./classes.component.css'],
 })
 export class ClassesComponent implements OnInit {
-  constructor() {}
+  allClassrooms: Classroom[] ;
 
-  ngOnInit(): void {}
+  constructor(private sharedDataService: SharedDataService) {}
+
+  getClassroomForUser() {
+    this.allClassrooms = this.sharedDataService.loggedInUserDetails.classrooms;
+  }
+
+  ngOnInit(): void {
+    this.getClassroomForUser();
+  }
   bgColor: string[] = [
     '#2191AB',
     '#080357',
@@ -21,15 +31,20 @@ export class ClassesComponent implements OnInit {
     '#CA2E55',
     '#2191FB',
   ];
+
+  assignRandomColor(): string {
+    return this.bgColor[
+      Math.floor(Math.random() * this.bgColor.length - 1) + 1
+    ];
+  }
+
   classesDataDummy: any[] = [
     {
       title: 'HTML Crash course',
       desc: 'Web development',
       student: 0,
       classCode: 'aac-xsx-adv',
-      colorCode: this.bgColor[
-        Math.floor(Math.random() * this.bgColor.length - 1) + 1
-      ],
+      colorCode: this.assignRandomColor(),
       userId: 12,
     },
     {
@@ -37,9 +52,7 @@ export class ClassesComponent implements OnInit {
       desc: 'Web development',
       student: 1,
       classCode: 'bdc-cwx-kusx',
-      colorCode: this.bgColor[
-        Math.floor(Math.random() * this.bgColor.length - 1) + 1
-      ],
+      colorCode: this.assignRandomColor(),
       userId: 31,
     },
   ];

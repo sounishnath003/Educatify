@@ -7,9 +7,9 @@
     [style.background-color]="color"
     (click)="navigateClass(classData)"
   >
-    <p class="text-xl">{{classData.title}}</p>
-    <p class="text-sm">{{classData.desc}}</p>
-    <p class="text-xs pt-2">{{classData.student}} students</p>
+    <p class="text-xl">{{ classData.className }}</p>
+    <p class="text-sm">{{ classData.created_at | date }}</p>
+    <p class="text-xs pt-2">{{ 427 }} students</p>
   </div>
   <div>
     <hr />
@@ -19,15 +19,17 @@
         <span
           (click)="copyClip()"
           class="text-gray-500 hover:text-gray-700 cursor-pointer"
-          >{{classData.classCode}}</span
+          >{{ classData.subjectCode }}</span
         >
       </p>
       <div class="my-auto text-gray-800 cursor-pointer">
-        <mat-menu #classMenu="matMenu" xPosition="after" yPosition='above'>
+        <mat-menu #classMenu="matMenu" xPosition="after" yPosition="above">
           <button mat-menu-item>Copy invite link</button>
           <button mat-menu-item>Edit</button>
         </mat-menu>
-        <mat-icon class="hover:bg-gray-200 rounded-full mx-2" [matMenuTriggerFor]="classMenu"
+        <mat-icon
+          class="hover:bg-gray-200 rounded-full mx-2"
+          [matMenuTriggerFor]="classMenu"
           >more_vert</mat-icon
         >
       </div>
