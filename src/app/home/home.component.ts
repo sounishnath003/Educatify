@@ -7,11 +7,14 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  isAuthenticated: Boolean = true;
+  isAuthenticated: Boolean = false;
 
   constructor(private _router: ActivatedRoute) {}
 
   ngOnInit() {
+    if (sessionStorage['username']) {
+      this.isAuthenticated = true;
+    }
     // this._authCheck() ;
   }
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-authentication',
@@ -7,12 +8,36 @@ import { Router } from '@angular/router';
   styleUrls: ['./authentication.component.scss'],
 })
 export class AuthenticationComponent implements OnInit {
-  constructor(private _router: Router) {}
+  public email: string = '';
+  public password: string = '';
+
+  constructor(private _router: Router, private authService: AuthService) {}
 
   ngOnInit() {}
 
-  loginAuth() {
-    this._router.navigate(['/'], { queryParams: { isAuth: true } });
+  setValue(e, type: string) {
+    if (type === 'username') {
+      this.email = e.target.value;
+    } else {
+      this.password = e.target.value;
+    }
+  }
+
+  async loginAuth() {
+    console.log(this.email, this.password);
+
+    const resp = await this.authService.loginAsStudent(
+      this.email,
+      this.password
+    );
+
+    if (resp === null) {
+      alert('Decide are you teacher/student?');
+    } else {
+      alert('Welcome In,! ' + resp.name);
+      sessionStorage['username']=resp.name;
+      window.location.reload();
+    }
   }
 
   signup() {
