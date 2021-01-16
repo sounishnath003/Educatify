@@ -37,23 +37,4 @@ export class ClassesComponent implements OnInit {
       Math.floor(Math.random() * this.bgColor.length - 1) + 1
     ];
   }
-
-  classesDataDummy: any[] = [
-    {
-      title: 'HTML Crash course',
-      desc: 'Web development',
-      student: 0,
-      classCode: 'aac-xsx-adv',
-      colorCode: this.assignRandomColor(),
-      userId: 12,
-    },
-    {
-      title: 'PHP Crash course',
-      desc: 'Web development',
-      student: 1,
-      classCode: 'bdc-cwx-kusx',
-      colorCode: this.assignRandomColor(),
-      userId: 31,
-    },
-  ];
 }

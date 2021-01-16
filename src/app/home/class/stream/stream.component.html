@@ -1,10 +1,10 @@
 <div
   class="pt-10 pb-20 px-16 text-white rounded-lg"
-  [style.background-color]="currClassData.colorCode"
+  [style.background-color]="classColor"
 >
-  <h2 class="text-3xl">{{ currClassData.title }}</h2>
-  <h4>{{ currClassData.desc }}</h4>
-  <p class="text-sm pt-2">Class Code : {{ currClassData.classCode }}</p>
+  <h2 class="text-3xl">{{ classroom.className }}</h2>
+  <h4>{{ ' My Class Description' }}</h4>
+  <p class="text-sm pt-2">Class Code : {{ classroom.subjectCode }}</p>
 </div>
 <div class="flex mt-4 sm:flex-row flex-col">
   <div (click)="openNotificationPanel()" class="bg-white cursor-pointer px-4 py-4 sm:h-40 overflow-hidden sm:w-1/4 w-full mr-2 rounded shadow">

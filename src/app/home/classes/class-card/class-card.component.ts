@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { Classroom } from 'src/app/models/loggedUser.model';
-import { ClassData } from '../../../models/classData.model';
 
 @Component({
   selector: 'app-class-card',
@@ -16,6 +15,7 @@ export class ClassCardComponent implements OnInit {
   ngOnInit(): void {
     localStorage.removeItem('currClassData');
   }
+
   copyClip() {
     alert('Class code copied!');
   }
@@ -36,7 +36,11 @@ export class ClassCardComponent implements OnInit {
   ];
 
   navigateClass(classData: Classroom) {
+    localStorage['classId'] = classData.id;
+    localStorage['classColor'] = this.color;
     localStorage.setItem('currClassData', JSON.stringify(classData));
-    this.router.navigateByUrl(`/class/${classData.subjectCode}`);
+    this.router.navigateByUrl(
+      `/class/${classData.className.split(' ').join('-').toLowerCase()}`
+    );
   }
 }

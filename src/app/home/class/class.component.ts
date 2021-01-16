@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ClassData } from 'src/app/models/classData.model';
+import { IClassroom } from 'src/app/models/classroom.model';
+
+import { GetClassroomService } from '../../services/getClassroom.service';
 
 @Component({
   selector: 'app-class',
@@ -7,7 +9,8 @@ import { ClassData } from 'src/app/models/classData.model';
   styleUrls: ['./class.component.css'],
 })
 export class ClassComponent implements OnInit {
-  constructor() {}
+  constructor(private classroomService: GetClassroomService) {}
+
   links: any[] = [
     { label: 'Stream', path: 'stream' },
     { label: 'Classwork', path: 'class-work' },
@@ -15,5 +18,12 @@ export class ClassComponent implements OnInit {
     { label: 'Request', path: 'request' },
     { label: 'Meeting Room', path: 'meeting' },
   ];
-  ngOnInit(): void {}
+
+  ngOnInit(): void {
+    this.getClassroomDetails();
+  }
+
+  private async getClassroomDetails() {
+    await this.classroomService.getClassData(localStorage['classId']);
+  }
 }
