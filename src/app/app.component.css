@@ -1,3 +1,7 @@
 #zmmtg-root {
   display: none;
 }
+
+html, body {
+  overflow-y: scroll;
+}
