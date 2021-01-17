@@ -1,1 +1,6 @@
-@import 'https://www.bootstrapdash.com/demo/simple/css/style.min.css' ;
+@import "https://www.bootstrapdash.com/demo/simple/css/style.min.css";
+
+html,
+body {
+  overflow-y: scroll;
+}
