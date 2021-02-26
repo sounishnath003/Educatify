@@ -18,16 +18,14 @@ const routes: Routes = [
       {
         path: 'class/:classId',
         component: ClassComponent,
-        loadChildren: () =>
-          import('./home/class/class.module').then((m) => m.ClassModule),
-        // children: [
-        //   { path: '', pathMatch: 'full', redirectTo: 'stream' },
-        //   { path: 'stream', component: StreamComponent },
-        //   { path: 'class-work', component: ClassWorkComponent },
-        //   { path: 'people', component: PeopleComponent },
-        //   { path: 'request', component: RequestComponent },
-        //   { path: 'meeting', component: MeetingRoomComponent },
-        // ],
+        children: [
+          { path: '', pathMatch: 'full', redirectTo: 'stream' },
+          { path: 'stream', component: StreamComponent },
+          { path: 'class-work', component: ClassWorkComponent },
+          { path: 'people', component: PeopleComponent },
+          { path: 'request', component: RequestComponent },
+          { path: 'meeting', component: MeetingRoomComponent },
+        ],
       },
     ],
   },
