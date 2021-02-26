@@ -63,107 +63,92 @@
       </mat-menu>
       <hr />
       <div class="px-0">
-        <div class="flex border-b justify-between my-1 py-2">
-          <div class="flex ml-4">
-            <div
-              class="text-xl text-white rounded-full w-10 h-10 text-center bg-indigo-600"
-            >
-              <mat-icon class="mt-2">assignment</mat-icon>
+        <div *ngFor="let studyMaterial of studyMaterials">
+          <div class="flex border-b justify-between my-1 py-2">
+            <div class="flex ml-4">
+              <div
+                class="text-xl text-white rounded-full w-10 h-10 text-center bg-indigo-600"
+              >
+                <mat-icon class="mt-2">assignment</mat-icon>
+              </div>
+              <a target="_blank" [href]="documentUrl(studyMaterial.url)">
+                <p
+                  class="my-auto mx-2 px-2 hover:text-indigo-800 cursor-pointer"
+                >
+                  {{ studyMaterial.name }}
+                </p>
+              </a>
             </div>
-            <p class="my-auto mx-2 px-2 hover:text-indigo-800 cursor-pointer">
-              Smallest KMP :Codechef
-            </p>
-          </div>
-          <mat-icon
-            class="my-auto cursor-pointer"
-            [matMenuTriggerFor]="topicItemMenu"
-            >more_vert</mat-icon
-          >
-        </div>
-        <mat-menu #topicItemMenu="matMenu">
-          <button mat-menu-item>Edit</button>
-          <button mat-menu-item>Delete</button>
-        </mat-menu>
-        <div class="flex border-b justify-between my-1 py-2">
-          <div class="flex ml-4">
-            <div
-              class="text-xl text-white rounded-full w-10 h-10 text-center bg-indigo-600"
+            <mat-icon
+              class="my-auto cursor-pointer"
+              [matMenuTriggerFor]="topicItemMenu"
+              >more_vert</mat-icon
             >
-              <mat-icon class="mt-2">assignment</mat-icon>
-            </div>
-            <p class="my-auto mx-2 px-2 hover:text-indigo-800 cursor-pointer">
-              Smallest KMP :Codechef
-            </p>
           </div>
-          <mat-icon
-            class="my-auto cursor-pointer"
-            [matMenuTriggerFor]="topicItemMenu"
-            >more_vert</mat-icon
-          >
+          <mat-menu #topicItemMenu="matMenu">
+            <button mat-menu-item>Edit</button>
+            <button mat-menu-item>Delete</button>
+          </mat-menu>
         </div>
-        <mat-menu #topicItemMenu="matMenu">
-          <button mat-menu-item>Edit</button>
-          <button mat-menu-item>Delete</button>
-        </mat-menu>
       </div>
-    </div>
-    <div class="topic mt-4 hover:shadow-lg rounded-lg p-4">
-      <div class="flex border-b-2 justify-between">
-        <p class="text-3xl text-indigo-600 my-auto">Post session notes</p>
-        <mat-icon
-          class="my-auto text-indigo-600 cursor-pointer"
-          [matMenuTriggerFor]="topicMenu"
-          >more_vert</mat-icon
-        >
-      </div>
-      <mat-menu #topicMenu="matMenu">
-        <button mat-menu-item>Rename</button>
-        <button mat-menu-item>Delete</button>
-      </mat-menu>
-      <hr />
-      <div class="px-0">
-        <div class="flex border-b justify-between my-1 py-2">
-          <div class="flex ml-4">
-            <div
-              class="text-xl text-white rounded-full w-10 h-10 text-center bg-indigo-600"
-            >
-              <mat-icon class="mt-2">assignment</mat-icon>
-            </div>
-            <p class="my-auto mx-2 px-2 hover:text-indigo-800 cursor-pointer">
-              Smallest KMP :Codechef
-            </p>
-          </div>
+      <div class="topic mt-4 hover:shadow-lg rounded-lg p-4">
+        <div class="flex border-b-2 justify-between">
+          <p class="text-3xl text-indigo-600 my-auto">Post session notes</p>
           <mat-icon
-            class="my-auto cursor-pointer"
-            [matMenuTriggerFor]="topicItemMenu"
+            class="my-auto text-indigo-600 cursor-pointer"
+            [matMenuTriggerFor]="topicMenu"
             >more_vert</mat-icon
           >
         </div>
-        <mat-menu #topicItemMenu="matMenu">
-          <button mat-menu-item>Edit</button>
+        <mat-menu #topicMenu="matMenu">
+          <button mat-menu-item>Rename</button>
           <button mat-menu-item>Delete</button>
         </mat-menu>
-        <div class="flex border-b justify-between my-1 py-2">
-          <div class="flex ml-4">
-            <div
-              class="text-xl text-white rounded-full w-10 h-10 text-center bg-indigo-600"
-            >
-              <mat-icon class="mt-2">assignment</mat-icon>
+        <hr />
+        <div class="px-0">
+          <div class="flex border-b justify-between my-1 py-2">
+            <div class="flex ml-4">
+              <div
+                class="text-xl text-white rounded-full w-10 h-10 text-center bg-indigo-600"
+              >
+                <mat-icon class="mt-2">assignment</mat-icon>
+              </div>
+              <p class="my-auto mx-2 px-2 hover:text-indigo-800 cursor-pointer">
+                Smallest KMP :Codechef
+              </p>
             </div>
-            <p class="my-auto mx-2 px-2 hover:text-indigo-800 cursor-pointer">
-              Smallest KMP :Codechef
-            </p>
+            <mat-icon
+              class="my-auto cursor-pointer"
+              [matMenuTriggerFor]="topicItemMenu"
+              >more_vert</mat-icon
+            >
           </div>
-          <mat-icon
-            class="my-auto cursor-pointer"
-            [matMenuTriggerFor]="topicItemMenu"
-            >more_vert</mat-icon
-          >
+          <mat-menu #topicItemMenu="matMenu">
+            <button mat-menu-item>Edit</button>
+            <button mat-menu-item>Delete</button>
+          </mat-menu>
+          <div class="flex border-b justify-between my-1 py-2">
+            <div class="flex ml-4">
+              <div
+                class="text-xl text-white rounded-full w-10 h-10 text-center bg-indigo-600"
+              >
+                <mat-icon class="mt-2">assignment</mat-icon>
+              </div>
+              <p class="my-auto mx-2 px-2 hover:text-indigo-800 cursor-pointer">
+                Smallest KMP :Codechef
+              </p>
+            </div>
+            <mat-icon
+              class="my-auto cursor-pointer"
+              [matMenuTriggerFor]="topicItemMenu"
+              >more_vert</mat-icon
+            >
+          </div>
+          <mat-menu #topicItemMenu="matMenu">
+            <button mat-menu-item>Edit</button>
+            <button mat-menu-item>Delete</button>
+          </mat-menu>
         </div>
-        <mat-menu #topicItemMenu="matMenu">
-          <button mat-menu-item>Edit</button>
-          <button mat-menu-item>Delete</button>
-        </mat-menu>
       </div>
     </div>
   </div>

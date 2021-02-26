@@ -5,8 +5,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AuthenticationComponent } from './authentication.component';
 
+import { AuthService } from "../services/auth.service";
+
 @NgModule({
   imports: [CommonModule, AuthenticationRoutingModule, MaterialModule],
   declarations: [AuthenticationComponent, SignupComponent],
+  providers: [AuthService]
 })
 export class AuthenticationModule {}

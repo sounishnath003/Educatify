@@ -1,6 +1,6 @@
 <div class="teacher_section sm:px-32 px-0">
   <div class="flex justify-between border-b-2 px-4 pb-2">
-    <p class="text-3xl text-indigo-700">Teachers</p>
+    <p class="text-3xl text-indigo-700">Teacher Details</p>
     <mat-icon class="text-indigo-700 cursor-pointer">person_add_alt_1</mat-icon>
   </div>
   <div class="person py-4 my-1 px-8 flex justify-between rounded-lg">
@@ -12,22 +12,30 @@
           class="rounded-full w-64"
         />
       </mat-icon>
-      <p class="ml-8">Sounish Nath</p>
+      <p class="ml-8">{{ teacherData.name }}</p>
+      <p class="ml-8">{{ teacherData.email }}</p>
+      <p class="ml-8">{{ teacherData.facultyCode }}</p>
     </div>
-    <mat-icon class="cursor-pointer" [matMenuTriggerFor]="teacherActions"> more_vert </mat-icon>
+    <mat-icon class="cursor-pointer" [matMenuTriggerFor]="teacherActions">
+      more_vert
+    </mat-icon>
   </div>
-      <mat-menu #teacherActions="matMenu">
-        <button mat-menu-item>Email</button>
-        <button mat-menu-item>Remove</button>
-        <button mat-menu-item>Leave</button>
-      </mat-menu>
+  <mat-menu #teacherActions="matMenu">
+    <button mat-menu-item>Email</button>
+    <button mat-menu-item>Remove</button>
+    <button mat-menu-item>Leave</button>
+  </mat-menu>
 </div>
 <div class="students_section sm:px-32 px-0 mt-20">
   <div class="flex justify-between border-b-2 px-4 pb-2">
     <p class="text-3xl text-indigo-700">Students</p>
     <mat-icon class="text-indigo-700 cursor-pointer">person_add_alt_1</mat-icon>
   </div>
-  <div class="person py-4 my-1 px-8 flex justify-between cursor-pointer hover:bg-indigo-100 rounded-lg">
+
+  <div *ngFor="let student of studentData" >
+      <div
+    class="person py-4 my-1 px-8 flex justify-between cursor-pointer hover:bg-indigo-100 rounded-lg"
+  >
     <div class="flex">
       <mat-icon class="">
         <img
@@ -36,13 +44,19 @@
           class="rounded-full w-64"
         />
       </mat-icon>
-      <p class="ml-8">Sounish Nath</p>
+      <p class="ml-8"> {{ student.name }} </p>
+      <p class="ml-8"> {{ student.studentCode }} </p>
+      <p class="ml-8"> {{ student.email }} </p>
     </div>
-    <mat-icon class="cursor-pointer" [matMenuTriggerFor]="teacherActions"> more_vert </mat-icon>
+    <mat-icon class="cursor-pointer" [matMenuTriggerFor]="teacherActions">
+      more_vert
+    </mat-icon>
   </div>
-      <mat-menu #teacherActions="matMenu">
-        <button mat-menu-item>Email</button>
-        <button mat-menu-item>Remove</button>
-        <button mat-menu-item>Leave</button>
-      </mat-menu>
+  </div>
+
+  <mat-menu #teacherActions="matMenu">
+    <button mat-menu-item>Email</button>
+    <button mat-menu-item>Remove</button>
+    <button mat-menu-item>Leave</button>
+  </mat-menu>
 </div>

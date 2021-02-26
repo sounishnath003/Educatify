@@ -1,9 +1,15 @@
 <nav mat-tab-nav-bar>
-  <a mat-tab-link class="font-semibold" *ngFor="let link of links" [routerLink]="link.path"
-  routerLinkActive #rla="routerLinkActive" [active]="rla.isActive"
+  <a
+    mat-tab-link
+    class="font-semibold"
+    *ngFor="let link of links"
+    [routerLink]="link.path"
+    routerLinkActive
+    #rla="routerLinkActive"
+    [active]="rla.isActive"
   >
-    {{link.label}}
+    {{ link.label }}
   </a>
 </nav>
-<br>
+<br />
 <router-outlet></router-outlet>

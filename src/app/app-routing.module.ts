@@ -11,18 +11,6 @@ import { MeetingRoomComponent } from './home/class/meeting-room/meeting-room.com
 
 const routes: Routes = [
   {
-    path: 'users/classes/:isAuth',
-    component: HomeComponent,
-    // redirectTo: ''
-  },
-  {
-    path: 'auth',
-    loadChildren: () =>
-      import('./authentication/authentication.module').then(
-        (m) => m.AuthenticationModule
-      ),
-  },
-  {
     path: '',
     component: HomeComponent,
     children: [

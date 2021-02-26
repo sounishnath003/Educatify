@@ -21,12 +21,12 @@ ZoomMtg.prepareJssdk();
 export class MeetingRoomComponent implements OnInit {
   signatureEndpoint = 'http://localhost:5000/';
   apiKey = 'UZfgOoyeRECwi5DfBq5n1A';
-  meetingNumber = 773_2945_5184;
+  meetingNumber = 72040070290;
   role = 0;
   leaveUrl = 'http://localhost:4200/class/:classId/meeting';
-  userName = 'sounish';
+  userName = 'sounishFromWeb';
   userEmail = 'nafisoy755@izzum.com';
-  passWord = 'rD00D9';
+  passWord = 'L8DQ8F';
 
   constructor(public httpClient: HttpClient, @Inject(DOCUMENT) document) {}
 
