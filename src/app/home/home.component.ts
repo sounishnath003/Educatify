@@ -5,7 +5,21 @@ import { SharedDataService } from '../services/sharedData.service';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
+  // templateUrl: './home.component.html',
+  template: `
+    <app-header></app-header>
+
+    <ng-container *ngIf="isAuthenticated == true; else notAuthenticated">
+      <div class="max-w-5xl pt-6 mx-auto m-auto">
+        <div class="rounded-lg px-2">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </ng-container>
+    <ng-template #notAuthenticated>
+      <app-landing-page></app-landing-page>
+    </ng-template>
+  `,
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
