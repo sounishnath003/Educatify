@@ -41,3 +41,5 @@ app.listen(port, () =>
 //     role: 0,
 //   },
 // }).then((r) => r.json());
+
+console.log('Testing purpose only!...')
