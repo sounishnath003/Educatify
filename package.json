@@ -3,14 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "yarn ng serve",
+    "start": "ng serve & yarn ngtw watch",
     "hmr": "ng serve & ngtw watch --sourceMap=true --progress=true --optimization=true --configuration hmr",
-    "build": "ng build --sourceMap=true --progress=true --optimization=true",
+    "build": "ngtw build && ng build --sourceMap=true --progress=true --optimization=true",
     "remote": "ng serve --host=192.168.0.3 --sourceMap=true --progress=true --optimization=true",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prestart": "yarn exec ngtw build"
+    "prestart": "yarn ngtw build"
   },
   "private": true,
   "dependencies": {
@@ -49,6 +49,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~3.3.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-tailwindcss": "^2.3.4",
     "protractor": "~7.0.0",
     "tailwindcss": "^2.0.2",
     "ts-node": "~8.3.0",

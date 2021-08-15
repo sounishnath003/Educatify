@@ -8,10 +8,6 @@ This project was basically generated with [Angular CLI](https://github.com/angul
 ## Run The Container
 **Executing task:** 
 > docker run --rm -d  -p 80:80/tcp educatify:latest 
-## Composing for Live Dev
-**Executing task:** 
-> docker-compose -f "docker-compose.yml" up -d --build
-
 
 ## Development server
 
